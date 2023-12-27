@@ -8,8 +8,15 @@ header {
     display: flex;
     max-width: 1440px;
     justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     margin: 0 auto;
-    padding: 24px 88px;
+    background-color: white;
 }
 
 header ul {
@@ -46,4 +53,113 @@ header li:first-child {
     box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
     cursor: pointer;
     margin-left: 10px;
+}
+
+main {
+    max-width: 1440px;
+    margin: 140px auto;
+}
+
+.upperPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upperPart span {
+    color: #22C55E;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 36px;
+    background: #DCFCE7;
+    box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+    display: inline-flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.upperPart h1 {
+    color: #2A3342;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.96px;
+    line-height: 60px;
+    margin-top: 16px;
+}
+
+.upperPart p {
+    color: #556987;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    width: 463.351px;
+    margin-top: 16px;
+}
+
+.hiring {
+    display: inline-flex;
+    height: 56px;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #22C55E;
+    box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+    color: #F0FDF4;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    border: none;
+    margin-right: 6px;
+}
+
+.culture {
+    display: inline-flex;
+    height: 56px;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid #D5DAE1;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+    color: #333F51;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1 fr 1 fr 1fr 1fr;
+    gap: 33px;
+}
+
+.grid-item {
+    background-color: #22C55E;
+    /* width: 359px; */
+    /* height: 384px; */
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item:first-child {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.grid-item:nth-child(5) {
+    grid-area: 3 / 2 / 5 / 4;
 }
