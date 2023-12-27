@@ -116,6 +116,7 @@ main {
     line-height: 28px;
     border: none;
     margin-right: 6px;
+    cursor: pointer;
 }
 
 .culture {
@@ -135,19 +136,15 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
+    cursor: pointer;
 }
 
 .grid {
+    margin-top: 64px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1 fr 1 fr 1fr 1fr;
     gap: 33px;
-}
-
-.grid-item {
-    background-color: #22C55E;
-    /* width: 359px; */
-    /* height: 384px; */
 }
 
 .grid img {
